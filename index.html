@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf App</title>
+  <!-- My css -->
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <!-- Flaticon -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>Bookshelf App</h1>
+  </header>
+  <div class="container">
+    <!-- Form input buku -->
+    <div class="add-book-form">
+      <input type="text" id="title" placeholder="Judul Buku">
+      <input type="text" id="author" placeholder="Penulis">
+      <input type="number" id="year" placeholder="Tahun Terbit">
+      <div class="checklist">
+        <div class="checklist-box">
+          <label for="isComplete" class="checklist-label">Sudah Dibaca</label>
+          <input type="checkbox" id="isComplete" class="checkbox-input">
+          <button id="addBook" class="add-button">Tambah Buku</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rak Buku -->
+    <div class="book-list">
+      <h2>Rak Buku</h2>
+
+      <!-- Search -->
+      <div class="search-section">
+        <input type="text" id="searchInput" placeholder="Cari Buku">
+        <button id="searchButton">Cari</button>
+      </div>
+      <div class="search-results">
+        <ul id="searchResultsList"></ul>
+      </div>
+      <div class="book-section">
+        <div id="unreadBooks" class="book-container">
+          <h3>Sedang Dibaca</h3>
+          <ul class="book-list"></ul>
+        </div>
+        <div id="readBooks" class="book-container">
+          <h3>Sudah Dibaca</h3>
+          <ul class="book-list"></ul>
+        </div>
+
+        <!-- Edit -->
+        <div id="editPopup" class="popup" style="display: none;">
+          <div class="popup-content">
+            <span class="close" id="closeEditPopup">&times;</span>
+            <h3>Edit Buku</h3>
+            <label for="editTitle">Judul</label>
+            <input type="text" id="editTitle" />
+            <label for="editAuthor">Penulis</label>
+            <input type="text" id="editAuthor" />
+            <label for="editYear">Tahun Terbit</label>
+            <input type="text" id="editYear" />
+            <button id="saveButton">Simpan</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intruksi -->
+    </div>
+    <div class="instructions-section">
+      <div class="usage-instructions">
+        <h4>Cara Penggunaan</h4>
+        <p>1. Isi formulir di atas untuk menambahkan buku baru ke rak buku Anda.</p>
+        <p>2. Anda dapat menandai buku sebagai "Sudah Dibaca" dengan mengklik kotak centang.</p>
+        <p>3. Gunakan fitur pencarian untuk mencari buku di rak Anda.</p>
+        <p>4. Klik buku untuk mengedit atau menghapusnya.</p>
+        <p>*Jika setelah mengedit namun data belum berubah silahkan halaman di refresh</p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <p>Created with <i class="fi fi-sr-heart"></i> by <a href="https://github.com/AhdanFirdaus">Ahdan Firdaus</a></p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
