@@ -329,7 +329,27 @@ footer p i {
 }
 
 @media (max-width: 480px) {
+  .book-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .book-list {
+    flex-direction: column;
+
+  }
+
   .popup-content {
     width: 100%;
+  }
+
+  .container footer {
+    width: 108%;
+  }
+}
+
+@media (max-width: 200px) {
+  .container footer {
+    width: 108%;
   }
 }
