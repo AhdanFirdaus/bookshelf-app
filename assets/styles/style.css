@@ -24,6 +24,7 @@ header {
   text-align: center;
   padding: 5px 0;
   border-radius: 0 0 10px 10px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -284,17 +285,15 @@ span {
 
 /* style footer */
 
-.container footer {
+footer {
   background-color: #007BFF;
-  width: 104%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: -20px;
-  margin-bottom: -20px;
+  margin-top: 20px;
   border-radius: 20px 20px 0 0;
-  padding-left: 10px;
   color: #fff;
 }
 
@@ -343,12 +342,6 @@ footer p i {
     width: 100%;
   }
 
-  .container footer {
-    width: 108%;
-  }
-}
-
-@media (max-width: 200px) {
   .container footer {
     width: 108%;
   }
